@@ -1,0 +1,38 @@
+# Metadata for National Map Line
+---
+Identifier: '5db9966b-148c-4f86-9758-45455eeda708'
+Name: 'national-map-line'
+Title: 'National Map Line'
+Description: 'This dataset contains major features for national map data sharing that
+  are represented in polyline form. Data includes road data like expressway, major
+  roads, international boundary and contour lines.'
+Topics:
+  - 'Infrastructure'
+Keywords:
+  - 'contour'
+  - 'expressway'
+  - 'major road'
+Publisher:
+  Name: 'Singapore Land Authority'
+  Admin 1:
+    Name: 'Yee Sook Ching'
+    Department: 'SINGAPORE LAND AUTHORITY'
+    Email: 'sla_agencyadmin@sla.gov.sg'
+Sources:
+  - 'Singapore Land Authority'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Last Updated: '2019-10-18T00:03:04.867696'
+Resources:
+  -
+    Identifier: 'de5f4fc2-e04f-4dcf-a02a-2ca6468b1b54'
+    Title: 'National Map Line (KML)'
+    Url: 'https://geo.data.gov.sg/singaporemap-line/2019/10/08/kml/singaporemap-line.kml'
+    Format: 'KML'
+    Last Updated: '2019-10-07T16:00:00'
+  -
+    Identifier: 'cdcbb2c7-f9ff-4eb2-823d-8401bb242438'
+    Title: 'National Map Line (GEOJSON)'
+    Url: 'https://geo.data.gov.sg/singaporemap-line/2019/10/08/geojson/singaporemap-line.geojson'
+    Format: 'GeoJSON'
+    Last Updated: '2019-10-07T16:00:00'

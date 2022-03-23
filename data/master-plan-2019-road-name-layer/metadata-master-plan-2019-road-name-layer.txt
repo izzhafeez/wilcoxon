@@ -1,0 +1,39 @@
+# Metadata for Master Plan 2019 Road layer
+---
+Identifier: 'f5b9f708-c31b-4fcf-b580-a2ee8e67c1ea'
+Name: 'master-plan-2019-road-name-layer'
+Title: 'Master Plan 2019 Road layer'
+Description: 'To display road names in the master plan.'
+Topics:
+  - 'Infrastructure'
+Keywords:
+  - 'LRT station'
+  - 'MP19'
+  - 'MP2019'
+  - 'Master Plan 2019 MRT station'
+Publisher:
+  Name: 'Urban Redevelopment Authority'
+  Admin 1:
+    Name: 'Pamela Poh'
+    Department: 'URBAN REDEVELOPMENT AUTHORITY'
+    Email: 'pamela_poh@ura.gov.sg'
+Sources:
+  - 'Urban Redevelopment Authority'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Ad-hoc'
+Last Updated: '2020-09-09T09:02:48.124192'
+Resources:
+  -
+    Identifier: '4a66d267-542e-4fad-82bd-7e0e06d339c6'
+    Name: 'master-plan-2019-road-name-layer.kml'
+    Title: 'Master Plan 2019 Road Name Layer'
+    Url: 'https://data.gov.sg/dataset/f5b9f708-c31b-4fcf-b580-a2ee8e67c1ea/resource/4a66d267-542e-4fad-82bd-7e0e06d339c6/download/master-plan-2019-road-name-layer.kml'
+    Format: 'KML'
+    Last Updated: '2020-07-16T07:46:49.628185'
+  -
+    Identifier: '667b3f04-38d7-4be1-bb0e-6aa4141a03ee'
+    Name: 'road-network.kml'
+    Title: 'Road Network'
+    Url: 'https://data.gov.sg/dataset/f5b9f708-c31b-4fcf-b580-a2ee8e67c1ea/resource/667b3f04-38d7-4be1-bb0e-6aa4141a03ee/download/road-network.kml'
+    Format: 'KML'
+    Last Updated: '2020-09-09T09:02:48.066777'

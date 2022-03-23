@@ -11,6 +11,13 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 import fiona
 
+path_to_TrainStationExits = "../Geospatial/GEOSPATIAL/TrainStationExit_Jan2020/TrainStationExit06032020.shp"
+path_to_TrainStations = "../Geospatial/GEOSPATIAL/TrainStation_Jan2020/MRTLRTStnPtt.shp"
+path_to_OriginDestinationTrain = "../Geospatial/GEOSPATIAL/origin_destination_train_202103.csv"
+path_to_OriginDestinationBus = "../Geospatial/GEOSPATIAL/origin_destination_bus_202103.csv"
+path_to_RoadNetwork = "../Geospatial/GEOSPATIAL/master-plan-2019-road-name-layer/road-network.kml"
+path_to_PlanningAreas = "../Geospatial/GEOSPATIAL/subzone-census-2010/Subzone_Census2010.kml"
+path_to_NationalMapLine = "../Geospatial/GEOSPATIAL/national-map-line/national-map-line-geojson.geojson"
 
 def getMRT():
 	"""
@@ -24,9 +31,9 @@ def getMRT():
 	Download data for train stations: TrainStation_Jan2020/MRTLRTStnPtt.shp
 	Download data for OriginDestinationTrain: origin_destination_train_202103.csv
 	"""
-	path_to_TrainStationExits = ""
-	path_to_TrainStations = ""
-	path_to_OriginDestinationTrain = ""
+	# path_to_TrainStationExits = ""
+	# path_to_TrainStations = ""
+	# path_to_OriginDestinationTrain = ""
 
 
 	print("Extracting Wikipedia links of MRT and LRT stations.")
@@ -246,7 +253,7 @@ def getBus(accountKey):
 
 	Download data for OriginDestinationBus: origin_destination_train_202103.csv
 	"""
-	path_to_OriginDestinationBus = ""
+	# path_to_OriginDestinationBus = ""
 
 
 	busRoutes = []
@@ -296,8 +303,8 @@ def getRoads():
 	Download data for road network: master-plan-2019-road-name-layer/road-network.kml
 	Download data for planning areas: subzone-census-2010/Subzone_Census2010.kml
 	"""
-	path_to_RoadNetwork = ""
-	path_to_PlanningAreas = ""
+	# path_to_RoadNetwork = ""
+	# path_to_PlanningAreas = ""
 
 
 	gpd.io.file.fiona.drvsupport.supported_drivers['KML'] = 'rw'
@@ -352,7 +359,7 @@ def generateElevationMap():
 	Download national_map_line data: national-map-line/national-map-line-geojson.geojson
 	"""
 
-	path_to_NationalMapLine = ""
+	# path_to_NationalMapLine = ""
 
 
 	elevation = gpd.read_file(path_to_NationalMapLine)
@@ -388,17 +395,17 @@ def alt(coords, elevationMap):
 	elevationMap: obtained when running the previous code, generateElevationMap()
 	coords [tuple of longitude and latitude]
 	"""
-    closestDistances = {x: 1000 for x in elevationMap.alt.unique()}
-    maxalt = 0
+	closestDistances = {x: 1000 for x in elevationMap.alt.unique()}
+	maxalt = 0
 
-    for polygon, alt in elevationMap[["polygon","Location"]].values.tolist():
-        point = coords
-        distance = polygon.exterior.distance(point)
-        closestDistances[int(alt)] = min(closestDistances[int(alt)], distance)
-        if point.within(polygon) and maxalt < int(alt):
-            maxalt = int(alt)
+	for polygon, alt in elevationMap[["polygon","Location"]].values.tolist():
+		point = coords
+		distance = polygon.exterior.distance(point)
+		closestDistances[int(alt)] = min(closestDistances[int(alt)], distance)
+		if point.within(polygon) and maxalt < int(alt):
+			maxalt = int(alt)
 
-    return ((maxalt + 20) * closestDistances[maxalt] + (maxalt) * closestDistances[maxalt + 20]) / (closestDistances[maxalt] + closestDistances[maxalt + 20])
+	return ((maxalt + 20) * closestDistances[maxalt] + (maxalt) * closestDistances[maxalt + 20]) / (closestDistances[maxalt] + closestDistances[maxalt + 20])
 
 
 
