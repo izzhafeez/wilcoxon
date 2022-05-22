@@ -2,11 +2,11 @@
 
 Wilcoxon is a Python library designed to assist me in my hobbies. I use it quite often and constantly look for ways to improve upon it. Currently, they are written in pretty bad Python code, but as I progress, I'm intending to incorporate them into functional apps, using my newfound knowledge on code design (from school). Here are some important submodules within the library:
 
-1. Chords :- A song processing module designed for analysing the chords used within a song matching them up to its lyrics. I use this to further my Deep Learning model in Tensorflow to predict chords based on lyrics given in a song.
-2. Language :- Powered by web-scraping functions, Language is designed for obtaining exam-level vocabulary as well as sample sentences for Chinese, Japanese and Korean. I use this to practice for my language tests, building an Angular application to produce flashcards.
-3. Geo :- A collection of geospatial functions used to extract and parse data pertaining to Singapore. The methods in this module have helped me produce my MALLS Card Game, using React as its frontend.
-4. Spiderman :- A module that facilitates web-scraping. After reading through the BeautifulSoup documentation, I found that certain common operations are not automated. As such, I decided to compile some of my most-used operations into one module.
-5. Telegram :- A Telegram interface used to check on the progress of code. I use this as a wrapper around my iterables so that the Telegram bot can give me progress updates on how many iterations of the loop the code has performed. This is very useful as I don't have to babysit the code.
+1. ```Chords``` :- A song processing module designed for analysing the chords used within a song matching them up to its lyrics. I use this to further my Deep Learning model in Tensorflow to predict chords based on lyrics given in a song.
+2. ```Language``` :- Powered by web-scraping functions, Language is designed for obtaining exam-level vocabulary as well as sample sentences for Chinese, Japanese and Korean. I use this to practice for my language tests, building an Angular application to produce flashcards.
+3. ```Geo``` :- A collection of geospatial functions used to extract and parse data pertaining to Singapore. The methods in this module have helped me produce my MALLS Card Game, using React as its frontend.
+4. ```Spiderman``` :- A module that facilitates web-scraping. After reading through the BeautifulSoup documentation, I found that certain common operations are not automated. As such, I decided to compile some of my most-used operations into one module.
+5. ```Telegram``` :- A Telegram interface used to check on the progress of code. I use this as a wrapper around my iterables so that the Telegram bot can give me progress updates on how many iterations of the loop the code has performed. This is very useful as I don't have to babysit the code.
 
 ## Chords
 
